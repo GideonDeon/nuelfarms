@@ -27,7 +27,7 @@ function BodyOne() {
     <div id="services">
       <div>
         <h1 className="mt-6 font-bold text-2xl ml-2 mb-5">
-          Nuel Farm Integrated Agricultural Products & Services
+          Nuel Farms Integrated Agricultural Products & Services
         </h1>
         <div>
           <div className="w-full flex flex-col items-center gap-2">

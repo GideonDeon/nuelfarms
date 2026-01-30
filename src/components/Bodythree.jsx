@@ -51,7 +51,7 @@ function Carousel() {
   }, [index]);
 
   return (
-    <div id="comments" className="bg-[url('images/bg_what.jpg')] bg-no-repeat bg-center bg-cover bg-black/50 bg-blend-color text-white  pt-5 pb-10">
+    <div id="comments" className="bg-[url('/images/bg_what.jpg')] bg-no-repeat bg-center bg-cover bg-black/50 bg-blend-color text-white  pt-5 pb-10">
       <h1 className="mt-6 font-bold text-4xl ml-2 mb-2 text-center">
         What People Say
       </h1>

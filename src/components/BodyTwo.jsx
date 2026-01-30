@@ -1,32 +1,32 @@
 const backGround = [
   {
     id: 1,
-    background: "bg-[url('images/layers.png')]",
+    background: "/images/layers.png",
     text: "Layers",
   },
   {
     id: 6,
-    background: "bg-[url('images/broilers.jpg')]",
+    background: "/images/broilers.jpg",
     text: "Broilers",
   },
   {
     id: 2,
-    background: "bg-[url('images/egg.jpg')]",
+    background: "/images/egg.jpg",
     text: "Eggs",
   },
   {
     id: 3,
-    background: "bg-[url('images/catfish_two.png')]",
+    background: "/images/catfish_two.png",
     text: "Catfish",
   },
   {
     id: 4,
-    background: "bg-[url('images/processed_chicken.jpg')]",
+    background: "/images/processed_chicken.jpg",
     text: "Processed Chicken",
   },
   {
     id: 5,
-    background: "bg-[url('images/feed.png')]",
+    background: "/images/feed.png",
     text: "Feeds",
   },
 ];
@@ -42,7 +42,8 @@ function BodyTwo() {
         {backGround.map((bg) => (
           <div
             key={bg.id}
-            className={`group ${bg.background} bg-no-repeat bg-cover bg-center h-80 w-full relative cursor-pointer`}
+            style={{backgroundImage: `url(${bg.background})`}}
+            className="group ${bg.background} bg-no-repeat bg-cover bg-center h-80 w-full relative cursor-pointer"
           >
             <span className="block h-10 w-full absolute bottom-0 pl-2 pt-2 bg-black/50 text-white text-[16px] group-hover:opacity-0 italic transition-all duration-300">
               {bg.text}
