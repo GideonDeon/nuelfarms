@@ -1,0 +1,33 @@
+@font-face {
+  font-family: Raleway;
+  src: url("./assets/fonts/Raleway-VariableFont_wght.ttf");
+}
+@theme {
+  --font-raleway: Raleway, "sanserif";
+  --animate-scale: scale 3s;
+  @keyframes scale {
+    from {
+      transform: scale(1.1);
+    }
+    to {
+     transform: scale(1)
+    }
+  }
+}
+@import "tailwindcss";
+
+@layer utilities {
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+      }
+    }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
