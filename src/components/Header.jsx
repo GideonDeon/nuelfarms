@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 const BgSlide = [
   {
     image: "/images/bg_pond.png",
-    text: "nuel farm & services",
+    text: "nuel farms & services",
     text2: "Reliable Poultry, Catfish Supply and Agricultural Consulting",
     text3: "Discover",
     href:"#products"
