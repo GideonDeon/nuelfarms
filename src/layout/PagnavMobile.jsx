@@ -27,7 +27,8 @@ const NavItems = [
     href: "#contacts",
   },
 ];
-function Pagnav() {
+
+function PagnavMobile() {
   const checkboxRef = useRef(null);
 
   const Onclick = () => {
@@ -37,11 +38,11 @@ function Pagnav() {
   };
   return (
     <div>
-      <div className="fixed z-30 h-15 w-full bg-black/90">
+      <div className="z-30 h-15 w-full bg-black/90 lg:hidden">
         <img
           src="/images/logo.png"
           alt="images"
-          className="w-10 h-10 rounded-full mt-2 ml-5"
+          className="w-10 h-10 rounded-full pt-3 ml-5"
         />
         <input
           type="checkbox"
@@ -59,11 +60,21 @@ function Pagnav() {
           </span>
           <span className="block absolute top-[50%] left-[50%] -translate-[50%]">
             {NavItems.map((items) => (
-              <li key={items.id} onClick={Onclick} className="mb-5 font-bold hover:text-[#f1cf69] hover:after:block after:bg-[#f1cf69] after:h-1 after:w-5">
+              <li
+                key={items.id}
+                onClick={Onclick}
+                className="mb-5 w-fit font-bold hover:text-[#f1cf69] hover:after:block after:bg-[#f1cf69] after:h-1 after:w-5"
+              >
                 <a href={items.href}>{items.text}</a>
               </li>
             ))}
-            <a href="#contacts" onClick={Onclick} className="block border-2 border-[#f1cf69] p-2 w-40 text-center text-[12px] font-bold uppercase hover:bg-[#f1cf69]/30">Get in Touch</a>
+            <a
+              href="#contacts"
+              onClick={Onclick}
+              className="block border-2 border-[#f1cf69] p-2 w-40 text-center text-[12px] font-bold uppercase hover:bg-[#f1cf69]/30"
+            >
+              Get in Touch
+            </a>
           </span>
         </ul>
       </div>
@@ -71,4 +82,4 @@ function Pagnav() {
   );
 }
 
-export default Pagnav;
+export default PagnavMobile

@@ -32,17 +32,28 @@ const backGround = [
 ];
 function BodyTwo() {
   return (
-    <div id="products">
-      <h1 className="mt-6 font-bold text-4xl ml-2 mb-2 text-center">Our Products</h1>
-      <p className="text-center">
-        We supply fresh, quality-assured poultry products to home and
+    <div id="products" className="bg-[#4a8b71]/20 mt-1">
+      <h1 className="mt-6 font-bold text-4xl ml-2 mb-2 text-center sm:hidden">
+        Our Products
+      </h1>
+      <p className="text-center sm:hidden">
+        We supply fresh, quality-assured poultry products to homes and
         businesses.
       </p>
-      <div className="p-5">
+      <div className="p-5 sm:grid sm:grid-cols-2 lg:grid-cols-4 w-full">
+        <div className="h-80 w-full pt-15">
+          <h1 className="mt-6 font-bold ml-2 mb-2 text-center text-2xl">
+            Our Products
+          </h1>
+          <p className="text-center">
+            We supply fresh, quality-assured poultry products to homes and
+            businesses.
+          </p>
+        </div>
         {backGround.map((bg) => (
           <div
             key={bg.id}
-            style={{backgroundImage: `url(${bg.background})`}}
+            style={{ backgroundImage: `url(${bg.background})` }}
             className="group ${bg.background} bg-no-repeat bg-cover bg-center h-80 w-full relative cursor-pointer"
           >
             <span className="block h-10 w-full absolute bottom-0 pl-2 pt-2 bg-black/50 text-white text-[16px] group-hover:opacity-0 italic transition-all duration-300">
@@ -50,6 +61,11 @@ function BodyTwo() {
             </span>
           </div>
         ))}
+        <div className="h-80 w-full pt-40">
+          <p className="text-center">
+            More soon...
+          </p>
+        </div>
       </div>
     </div>
   );

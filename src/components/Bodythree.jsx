@@ -6,7 +6,7 @@ const slides = [
     title: "Mr Kunle, Osogbo",
     title2: "",
     comment:
-      "I have been buying poultry products and catfish from Nuel Farm & Services, and the quality has always been very good. They are reliable and deliver on time.",
+      "I have been buying poultry products and catfish from Nuel Farms & Services, and the quality has always been very good. They are reliable and deliver on time.",
     space: " ",
   },
   {
@@ -14,14 +14,14 @@ const slides = [
     title: "Mrs Farotimi, Osogbo",
     title2: "(Restaurant Owner)",
     comment:
-      "Working with Nuel Farm & Services has been a good experience for us. Their poultry products and catfish are always fresh. We are satisfied with their service and will continue working with them.",
+      "Working with Nuel Farms & Services has been a good experience for us. Their poultry products and catfish are always fresh. We are satisfied with their service and will continue working with them.",
   },
   {
     id: 3,
     title: "Mr Anu, Ibadan",
     title2: "(Poultry Farmer)",
     comment:
-      "Nuel Farm & Services has been consistent in both product quality and support. We received proper guidance during our farm setup, and the results have been positive. They are trustworthy and professional in their dealings.",
+      "Nuel Farms & Services has been consistent in both product quality and support. We received proper guidance during our farm setup, and the results have been positive. They are trustworthy and professional in their dealings.",
   },
 ];
 
@@ -78,7 +78,7 @@ function Carousel() {
 
 function Contact() {
   return (
-    <div id="contacts">
+    <div id="contacts" className="lg:grid grid-cols-2">
       <div className="bg-[#4a8b71] text-white pb-5">
         <h1 className="text-4xl font-bold pt-2 pb-2 ml-2">Contacts</h1>
         <p className="pl-2 pr-2">
@@ -131,7 +131,6 @@ function Contact() {
           </span>
         </div>
         <div
-          id="home"
           className="mt-10 w-fit relative left-[50%] -translate-x-[50%]"
         >
           <a href="https://wa.me/+2347032760850" target="_blank">
@@ -140,7 +139,7 @@ function Contact() {
               className="text-2xl inline-block hover:-translate-y-2"
             />
           </a>
-          <a href="http://" target="_blank">
+          <a href="https://www.facebook.com/share/1BrtBdZxvu/" target="_blank">
             <FontAwesomeIcon
               icon="fa-brands fa-square-facebook"
               className="text-2xl inline-block hover:-translate-y-2"
@@ -152,7 +151,7 @@ function Contact() {
               className="text-2xl inline-block hover:-translate-y-2"
             />
           </a>
-          <a href="https://t.me/NUELfarms" target="_blank">
+          <a href="https://t.me/dhayour09" target="_blank">
             <FontAwesomeIcon
               icon="fa-brands fa-telegram"
               className="text-2xl inline-block hover:-translate-y-2"
@@ -162,7 +161,7 @@ function Contact() {
       </div>
       <div>
         <iframe
-          className="w-full h-50 border border-[#4a8b71] hidden"
+          className="w-full h-full border border-[#4a8b71] hidden lg:block"
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1976.4511332411992!2d4.590042158954059!3d7.800171232555301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1769527573679!5m2!1sen!2sng"
           allowFullScreen={true}
           loading="lazy"
