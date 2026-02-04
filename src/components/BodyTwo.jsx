@@ -41,7 +41,7 @@ function BodyTwo() {
         businesses.
       </p>
       <div className="p-5 sm:grid sm:grid-cols-2 lg:grid-cols-4 w-full">
-        <div className="h-80 w-full pt-15">
+        <div className="h-80 w-full pt-15 hidden sm:block">
           <h1 className="mt-6 font-bold ml-2 mb-2 text-center text-2xl">
             Our Products
           </h1>
@@ -61,7 +61,7 @@ function BodyTwo() {
             </span>
           </div>
         ))}
-        <div className="h-80 w-full pt-40">
+        <div className="h-80 w-full pt-40 border border-[#4a8b71] bg-[#4a8b71]/50">
           <p className="text-center">
             More soon...
           </p>
