@@ -8,14 +8,14 @@ function Invest() {
     <div>
       <PagnavMobileInvest />
       <div
-        className="relative bg-cover bg-center h-70 w-full lg:h-100"
-        style={{ backgroundImage: "url('/images/invest_layers.png')" }}
+        className="relative bg-cover bg-center h-60 w-full lg:h-100"
+        style={{ backgroundImage: "url('/images/layers.png')" }}
       >
         <div className="absolute inset-0 bg-linear-to-r from-black/95 via-black/50 to-transparent"></div>
         <span className=" relative z-10">
           <PagnavDesktopInvest />
         </span>
-        <div className="relative z-10 text-white pl-5 pt-10">
+        <div className="relative z-10 text-white pl-5 pt-15">
           <span className="text-5xl uppercase lg:text-7xl xl:text-9xl">Poultry</span>
           <br />
           <span className="text-2xl text-[#f1cf69] uppercase lg:text-4xl xl:text-6xl lg:pl-1 xl:pl-2">
@@ -98,7 +98,7 @@ function InvestmentPackage() {
 function InvestmentCard() {
   return (
     <div className="bg-[#4a8b71]/40 w-full h-fit p-1 grid grid-cols-2 gap-1 md:grid-cols-3">
-      <div className="bg-white w-full h-40 p-2">
+      <div className="bg-white w-full h-45 p-2">
         <div className="text-[#4a8b71] text-center text-bold uppercase">
           <FontAwesomeIcon icon="fa-solid fa-calendar" className="text-3xl" />
           <span className="block">Project status</span>
@@ -113,7 +113,7 @@ function InvestmentCard() {
           </li>
         </ol>
       </div>
-      <div className="bg-white w-full h-40 p-2">
+      <div className="bg-white w-full h-45 p-2">
         <div className="text-[#4a8b71] text-center text-bold uppercase">
           <FontAwesomeIcon icon="fa-solid fa-chart-pie" className="text-3xl" />
           <span className="block">Investment Structures</span>
@@ -126,7 +126,7 @@ function InvestmentCard() {
           <li>Full managed farm operation.</li>
         </ol>
       </div>
-      <div className="bg-white w-full h-40 p-2">
+      <div className="bg-white w-full h-45 p-2">
         <div className="text-[#4a8b71] text-center text-bold uppercase">
           <FontAwesomeIcon icon="fa-solid fa-coins" className="text-3xl" />
           <span className="block">Production Estimate</span>
@@ -146,7 +146,7 @@ function InvestmentCard() {
           </li>
         </ol>
       </div>
-      <div className="bg-white w-full h-40 p-2">
+      <div className="bg-white w-full h-45 p-2">
         <div className="text-[#4a8b71] text-center text-bold uppercase">
           <FontAwesomeIcon icon="fa-solid fa-chart-line" className="text-3xl" />
           <span className="block">Revenue Model</span>
@@ -156,7 +156,7 @@ function InvestmentCard() {
           <li>Market dependent pricing</li>
         </ol>
       </div>
-      <div className="bg-white w-full h-40 p-2">
+      <div className="bg-white w-full h-45 p-2">
         <div className="text-[#4a8b71] text-center text-bold uppercase">
           <FontAwesomeIcon
             icon="fa-solid fa-hand-holding-dollar"
@@ -173,7 +173,7 @@ function InvestmentCard() {
           </li>
         </ol>
       </div>
-      <div className="bg-white w-full h-40 p-2">
+      <div className="bg-white w-full h-45 p-2">
         <div className="text-[#4a8b71] text-center text-bold uppercase">
           <FontAwesomeIcon
             icon="fa-solid fa-triangle-exclamation"
