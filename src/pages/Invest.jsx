@@ -15,7 +15,7 @@ function Invest() {
         <span className=" relative z-10">
           <PagnavDesktopInvest />
         </span>
-        <div className="relative z-10 text-white pl-5 pt-15">
+        <div className="relative z-10 text-white pl-5 pt-15 lg:pt-5">
           <span className="text-5xl uppercase lg:text-7xl xl:text-9xl">Poultry</span>
           <br />
           <span className="text-2xl text-[#f1cf69] uppercase lg:text-4xl xl:text-6xl lg:pl-1 xl:pl-2">
@@ -87,7 +87,7 @@ function InvestmentPackage() {
           Capital Requirements
         </p>
         <div>
-          <p className="text-3xl font-bold">₦200,000</p>
+          <p className="text-3xl font-bold mt-3">₦200,000</p>
           <p className="pt-2 pb-2 font-semibold">200 birds</p>
           <p className="font-semibold">12-months-cycle</p>
         </div>

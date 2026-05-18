@@ -1,3 +1,4 @@
+import About from "../components/About";
 import BodyOne from "../components/BodyOne";
 import Bodythree from "../components/Bodythree";
 import BodyTwo from "../components/BodyTwo";
@@ -10,6 +11,7 @@ function Home() {
     <div className="font-raleway">
       <InvestPromptModal />
       <Header />
+      <About />
       <BodyOne />
       <BodyTwo />
       <Bodythree />
