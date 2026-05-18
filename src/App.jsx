@@ -3,24 +3,23 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import Header from "./components/Header";
-import BodyOne from "./components/BodyOne";
-import BodyTwo from "./components/BodyTwo";
-import Bodythree from "./components/Bodythree";
-import Footer from "./layout/Footer";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";  
+import Invest from "./pages/Invest";
 library.add(fas, far, fab)
 
 
 function App() {
   return (
-    <div className="font-raleway">
-      
-      <Header />
-      <BodyOne />
-      <BodyTwo />
-      <Bodythree />
-      <Footer />
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/invest" element={<Invest />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

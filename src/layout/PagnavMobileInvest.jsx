@@ -5,26 +5,25 @@ const NavItems = [
   {
     id: 1,
     text: "Services",
-    href: "#services",
+    href: "/",
   },
   {
     id: 2,
     text: "Products",
-    href: "#products",
+    href: "/",
   },
   {
     id: 3,
     text: "Comments",
-    href: "#comments",
+    href: "/",
   },
   {
     id: 4,
     text: "Contacts",
-    href: "#contacts",
+    href: "/",
   },
 ];
-
-function PagnavMobile() {
+function PagnavMobileInvest() {
   const checkboxRef = useRef(null);
 
   const Onclick = () => {
@@ -67,7 +66,7 @@ function PagnavMobile() {
                 onClick={Onclick}
                 className="mb-5 w-fit font-bold hover:text-[#f1cf69] hover:after:block after:bg-[#f1cf69] after:h-1 after:w-5"
               >
-                <a href={items.href}>{items.text}</a>
+                <Link to={items.href}>{items.text}</Link>
               </li>
             ))}
             <span
@@ -76,13 +75,13 @@ function PagnavMobile() {
             >
               <Link to="/invest"> Invest </Link>
             </span>
-            <a
-              href="#contacts"
+            <Link
+              to="/"
               onClick={Onclick}
               className="block border-2 border-[#f1cf69] p-2 w-40 text-center text-[12px] font-bold uppercase hover:bg-[#f1cf69]/30"
             >
               Get in Touch
-            </a>
+            </Link>
           </span>
         </ul>
       </div>
@@ -90,4 +89,4 @@ function PagnavMobile() {
   );
 }
 
-export default PagnavMobile;
+export default PagnavMobileInvest;
