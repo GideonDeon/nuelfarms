@@ -80,8 +80,8 @@ function Contact() {
   return (
     <div id="contacts" className="lg:grid grid-cols-2">
       <div className="bg-[#4a8b71] text-white pb-5">
-        <h1 className="text-4xl font-bold pt-2 pb-2 ml-2">CONTACTS</h1>
-        <p className="pl-2 pr-2">
+        <h1 className="text-4xl font-bold pt-2 pb-2 ml-2 md:text-center lg:text-left">CONTACTS</h1>
+        <p className="pl-2 pr-2 md:text-center lg:text-left">
           Contact us for quality poultry, catfish, and farm consultancy
           services. We look forward to working with you.
         </p>

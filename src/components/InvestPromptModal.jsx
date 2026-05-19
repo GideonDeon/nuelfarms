@@ -34,7 +34,7 @@ function InvestPromptModal() {
       <div className="bg-white rounded-lg shadow-lg p-4 max-w-md w-full mx-4">
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 text-white hover:cursor-pointer text-2xl font-bold"
+          className="absolute top-4 right-4 bg-black/70 rounded-full text-white hover:cursor-pointer text-[12px] md:text-2xl font-bold"
         >
           <FontAwesomeIcon icon="fa-solid fa-xmark" />
         </button>
@@ -45,13 +45,13 @@ function InvestPromptModal() {
           />
           <p className="text-gray-800 text-lg font-semibold mb-6">
             Invest in a shared 200-bird poultry unit while we handle feeding,
-            management, and farm operations for you.
+            management, and farm operations for you!
           </p>
           <button
             onClick={handleInvest}
             className="w-full bg-[#4a8b71] text-white font-bold py-3 px-4 rounded-lg hover:bg-[#3d6d58] transition-colors uppercase"
           >
-            INVEST!
+            INVEST
           </button>
         </div>
       </div>

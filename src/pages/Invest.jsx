@@ -5,7 +5,7 @@ import Footer from "../layout/Footer";
 
 function Invest() {
   return (
-    <div>
+    <div className="font-raleway">
       <PagnavMobileInvest />
       <div
         className="relative bg-cover bg-center h-60 w-full lg:h-100"
